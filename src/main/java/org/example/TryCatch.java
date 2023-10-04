@@ -1,20 +1,22 @@
 package org.example;
 
-import java.util.Map;
-import java.util.concurrent.CompletableFuture;
-
 public class TryCatch {
 
-  public boolean someMethod(GetFuture g) {  // FP raised
+  public boolean someMethod(int x) {  // FP raised
     try {
-      g.someExceptionalMethod();
+      someExceptionalMethod(x);
     } catch (IllegalArgumentException e) {
       return false;
     }
     return true;
   }
 
-
+  private int someExceptionalMethod(int x) {
+    if(x==0) {
+      return 0;
+    }
+    throw new IllegalArgumentException();
+  }
 
 
 
