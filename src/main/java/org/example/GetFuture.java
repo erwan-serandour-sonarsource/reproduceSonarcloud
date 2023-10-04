@@ -3,7 +3,7 @@ package org.example;
 import java.util.concurrent.CompletableFuture;
 
 public class GetFuture {
-  public static CompletableFuture<String> getFuture(){
+  public  CompletableFuture<String> getFuture(){
     return null;
   }
 
