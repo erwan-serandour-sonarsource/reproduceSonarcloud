@@ -12,9 +12,7 @@ public class TryCatch {
   }
 
   private int someExceptionalMethod(int x) {
-    if(x==0) {
-      return 0;
-    }
+
     throw new IllegalArgumentException();
   }
 
